@@ -3,7 +3,7 @@ public class Main {
 
         createHeroes();
         for (int i = 0; i < createHeroes().length; i++) {
-            System.out.println("Hero" + (i + 1) + " health: " + createHeroes()[i].getHealth() + " Hero: " + (i + 1) + " heroes damage; " + createHeroes()[i].getDamage() + "Hero" + (i + 1) + " UltimateSkill: " + createHeroes()[i].getUltimateSkill());
+            System.out.println("Hero" + (i + 1) + " health: " + createHeroes()[i].getHealth() + " Hero: " + (i + 1) + " heroes damage; " + createHeroes()[i].getDamage() + " Hero " + (i + 1) + " UltimateSkill: " + createHeroes()[i].getUltimateSkill());
         }
 
         Hero heroes = new Hero(20, 100, "Blessing of the god of war - Ares");
@@ -12,8 +12,8 @@ public class Main {
         System.out.println("HeroS2: " + " Damage: " + heroes2.getDamage() + "; Health: " + heroes2.getHealth());
 
         Boss boss = new Boss();
-        boss.setBossDamage(30);
-        boss.setBossHealth(300);
+        boss.setBossDamage(35);
+        boss.setBossHealth(400);
         boss.setTypeOfDefence("Physic Type Of Defence");
         System.out.println("Boss: " + " BossDamage: " + boss.getBossDamage() + " ; BossHealth: " + boss.getBossHealth() + " ; Type Of Defence : " + boss.getTypeOfDefence());
     }
